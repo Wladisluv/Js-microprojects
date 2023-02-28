@@ -48,6 +48,9 @@ body {
   display: none;
   padding: 5px;
 }
+.tabs__item p {
+  font-size: 22px;
+}
 .tabs__item.active {
   display: block;
 }

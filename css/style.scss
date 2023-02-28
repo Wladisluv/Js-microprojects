@@ -52,6 +52,11 @@ body {
     &__item {
         display: none;
         padding: 5px;
+
+        p {
+            font-size: 22px;
+        }
+
         &.active {
             display: block;
         }
