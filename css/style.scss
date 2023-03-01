@@ -1,0 +1,112 @@
+$primary-color: #ababab;
+$secondary-color: #AF7EEB;
+
+body {
+    background-color: $primary-color;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.todo {
+    margin-top: 50px;
+
+    &__input {
+        width: 230px;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 600px;
+        height: 70px;
+        background-color: $secondary-color;
+
+        h1 {
+            color: white;
+        }
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 600px;
+        height: 500px;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    &__content {
+        align-self: flex-start;
+        margin-top: 10px;
+        width: 500px;
+        height: 400px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            font-size: 28px;
+            list-style-type: none;
+
+            li {
+                display: flex;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__add-btn {
+        position: absolute;
+        top: 470px;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 190px;
+        height: 60px;
+        background-color: $secondary-color;
+        border-radius: 30px;
+        
+        p {
+            font-size: 26px;
+            color: white;
+        }
+
+        &:hover {
+            cursor: pointer;
+            transition: 0.1s ease-in-out;
+            background-color: #9844ff;
+        }
+    }
+
+    &__delete-btn {
+        display: block;
+        margin-right: 20px;
+        width: 30px;
+        height: 30px;
+        background-image: url(../assets/trash-can.svg);
+        background-size: cover;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
