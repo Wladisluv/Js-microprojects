@@ -1,0 +1,123 @@
+$primary-color: #6a6a6a;
+
+body {
+    background-color: $primary-color;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.popup-open-btn {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    button {
+        width: 13rem;
+        height: 4rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 10px 8px 2px 1px #ca66eb;
+        background-color: #bf07fc;
+        font-size: 22px;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+            transition: 0.2s ease;
+            background-color: #a300d9;
+        }
+    }
+}
+
+.popup {
+    &__overlay {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3ms ease-in-out;
+        background-color: #49494987;
+    }
+
+    &__item {
+        position: relative;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+        background-color: #efb4f9;
+    }
+
+    &__close {
+        position: absolute;
+        right: 8px;
+        top: -5px;
+
+        a {
+            font-size: 42px;
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                transition: 0.1s ease;
+                color: blue;
+            }
+        }
+    }
+
+    &__header {
+        padding-left: 30px;
+    }
+
+    &__content {
+        p {
+            font-size: 20px;
+        }
+    }
+
+    &__buttonbar {
+        margin-top: 1rem;
+        margin-left: 20px;
+        
+        button {
+            width: 8rem;
+            height: 3rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #795bff;
+
+            &:hover {
+                cursor: pointer;
+                transition: 0.2s ease;
+                background-color: #3b18da;
+                color: white;
+            }
+        }
+    }
+} 
