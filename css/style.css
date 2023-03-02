@@ -24,6 +24,7 @@ body {
     height: 256px;
     border-radius: 10px;
     background-color: #f87bff4e;
+    overflow: hidden;
 }
 
 .slider__prev-btn {
@@ -48,6 +49,7 @@ body {
     width: 30px;
     height: 30px;
     font-size: 32px;
+    z-index: 999;
 }
 
 .slider__next-btn:hover {
@@ -58,7 +60,9 @@ body {
 
 .slider__line {
     display: flex;
-    height: 256px;
+    position: relative;
+    left: 0px;
     width: 1024px;
-    overflow: hidden;
+    height: 256px;
+    transition: 0.2s ;
 }
