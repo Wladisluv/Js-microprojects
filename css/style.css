@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
   width: 600px;
   height: 70px;
-  background-color: #AF7EEB;
+  background-color: #c697ff;
 }
 .todo__header h1 {
   color: white;
@@ -49,8 +49,9 @@ body {
 .todo__content {
   align-self: flex-start;
   margin-top: 10px;
-  width: 500px;
-  height: 400px;
+  width: 580px;
+  height: 480px;
+  overflow-y: scroll;
 }
 .todo__content ul {
   margin: 0;
@@ -63,20 +64,17 @@ body {
   margin-top: 10px;
 }
 .todo__add-btn {
-  position: absolute;
-  top: 470px;
-  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  width: 190px;
-  height: 60px;
-  background-color: #AF7EEB;
+  margin-left: 20px;
+  width: 140px;
+  height: 50px;
+  background-color: #c697ff;
   border-radius: 30px;
 }
 .todo__add-btn p {
-  font-size: 26px;
+  font-size: 18px;
   color: white;
 }
 .todo__add-btn:hover {
