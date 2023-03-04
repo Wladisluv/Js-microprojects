@@ -1,0 +1,95 @@
+body {
+  background-color: #ababab;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.todo {
+  margin-top: 50px;
+}
+.todo__input {
+  width: 230px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+.todo__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 600px;
+  height: 70px;
+  background-color: #c697ff;
+}
+.todo__header h1 {
+  color: white;
+}
+.todo__body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  z-index: 1;
+}
+.todo__content {
+  align-self: flex-start;
+  margin-top: 10px;
+  width: 580px;
+  height: 480px;
+  overflow-y: scroll;
+}
+.todo__content ul {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  list-style-type: none;
+}
+.todo__content ul li {
+  display: flex;
+  margin-top: 10px;
+}
+.todo__add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  width: 140px;
+  height: 50px;
+  background-color: #c697ff;
+  border-radius: 30px;
+}
+.todo__add-btn p {
+  font-size: 18px;
+  color: white;
+}
+.todo__add-btn:hover {
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  background-color: #9844ff;
+}
+.todo__delete-btn {
+  display: block;
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/trash-can.svg);
+  background-size: cover;
+}
+.todo__delete-btn:hover {
+  cursor: pointer;
+}
